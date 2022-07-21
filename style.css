@@ -10,6 +10,9 @@
 
 body{
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 header{
       padding: 20px;
@@ -39,7 +42,6 @@ header{
   height: 500px;
   border: 10px solid #f1c40f;
   border-radius: 50%;
-  box-shadow: 10px;
   box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.355);}
 .nav-container{
   background-color: rgb(0, 0, 0);
@@ -81,10 +83,12 @@ a:hover {
 .personal-information-container div{
    background-color: #3a37270e;
    overflow: auto;
+   
+   box-shadow: 10px 10px 20px 10px rgba(128, 128, 128, 0.509);
+   border-radius: 15px;
 }
 .form {
-  font-family: 'Poppins',
-    sans-serif;
+  
 }
 
 /* css for animation */
@@ -128,9 +132,8 @@ img[width="auto"] {
   border-radius: 1000px;
 }
 
-.skill-container li:hover {
-  )
-}
+
+
 
 .skill-container li::after {
 
@@ -150,9 +153,7 @@ img[width="auto"] {
   animation-timing-function: ease;
   animation-delay: 1ms;
   animation-iteration-count: infinite;
-  /*  */
-  /* animation-direction: forward; */
-  hover: (animation-fill-mode: forwards; )
+  
 }
 
 .skill-container li.html::after {
@@ -257,8 +258,18 @@ img[width="auto"] {
   font-style: italic
 } */
 
+.form{
+  background-color:#3a372729;
+  border-radius: 15px;
+    box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.355);}
+  
 
+.location{
 
+  background-color: black;
+  border-radius: 15px;
+    box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.355);
+}
 iframe[loading="lazy"] {
   border: 20px solid #f1c40f;
   border-radius: 10px;
@@ -333,13 +344,7 @@ input[type="radio"] {
   border: 2px solid #f1c40f;
 }
 
-footer {
-  width: 100%;
-  height: 150px;
-  background-color: rgba(189, 195, 156, 0.157);
-  text-align: center;
-  padding-top: 20px;
-}
+
 
 /* css table starts from here */
 
@@ -376,4 +381,14 @@ th {
 
 tr:hover {
   background-color: rgba(255, 250, 197, 0.689);
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: rgba(135, 108, 108, 0.583);
+  text-align: center;
+  padding-top: 20px;
+  box-shadow: 0px 10px 25px 30px rgba(249, 194, 194, 0.284);
+  border-radius: 15px;
 }
