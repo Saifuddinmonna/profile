@@ -2,8 +2,8 @@
 
 *{
   font-family: 'Poppins', sans-serif;
-  padding: 20px;
-  margin: 20px;
+  margin: 15px;
+  
   box-sizing: border-box;
 }
 
@@ -79,14 +79,17 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,450px);
-    overflow: auto;
+   
+    
 }
 .personal-information-container div{
    background-color: #3a37270e;
    overflow: visible;
+   padding: 10px;
    
    box-shadow: 10px 10px 20px 10px rgba(128, 128, 128, 0.509);
    border-radius: 15px;
+   overflow: auto;
 }
 
 
