@@ -104,6 +104,8 @@ a:hover {
 .table-container{
   background-color: #dfd7b636;
   padding: 15px;
+  border-radius: 15px;
+   box-shadow: 10px 10px 20px -2px rgba(156, 155, 155, 0.39);
   
 }
 table {
