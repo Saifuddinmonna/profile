@@ -15,8 +15,8 @@ body{
   align-items: center;
 }
 header{
-      padding: 20px 2px;
-      margin: 20px 2px;
+      padding: 10px;
+      margin: 10px;
       display: flex;
       justify-content: center;
       width: 100%;
@@ -78,11 +78,12 @@ a:hover {
 .personal-information-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,400px);
+    grid-template-rows: repeat(3,450px);
+    overflow: auto;
 }
 .personal-information-container div{
    background-color: #3a37270e;
-   overflow: auto;
+   overflow: visible;
    
    box-shadow: 10px 10px 20px 10px rgba(128, 128, 128, 0.509);
    border-radius: 15px;
@@ -140,10 +141,6 @@ footer {
 
 
 
-.form {
-  
-}
-
 /* css for animation */
 
 img[width="auto"] {
@@ -160,7 +157,7 @@ img[width="auto"] {
 .skill-container {
   background-color: gray;
   min-width:100%;
-  padding: 20px;
+  padding: px;
 }
 
 .skill-container li {
@@ -423,14 +420,7 @@ button {
   font-weight: 600;
 }
 
-textarea {
-  width: 350px;
-  height: 250px;
-  border: 8px solid rgba(174, 125, 130, 0.294);
-  border-radius: 20PX;
-  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.171);
-  background-color: rgba(249, 169, 169, 0.196);
-}
+
 footer p{
   color: aliceblue;
 }
@@ -442,46 +432,32 @@ footer p{
   font-size: 25px;
   color: rgb(51, 51, 250);
   display: inline;
-  margin: 2px;
-  padding: 2px;
 }
 /* responsive start from here  */
 
 @media only screen and (max-width:688px){
 
-  .main-container{
-    display: flex;
-    align-content: center;
-  }
   header{
     
-    flex-direction: column;
-      align-items: center;
-      }
+    flex-direction: column;}
     .nav-container> a{
-      display: block;
+      
     }
-    .header-title h1{
-      font-size: 30px;
-    }
-    .header-title h2{
-      font-size: 22px;
-    }
-
     .personal-information-container{
       grid-template-columns: 1fr;
-      grid-gap: 15px;
-      text-align: justify;
     }
  
     .social-icon-container a{
       display: inline-block;
     }
-    *{
-     text-overflow: clip;
-     padding: 4px;
-     margin: 4px;
-    }
-    
   }
+
+/* responsive for tablate  */
+
+@media only screen and (min-width:689px) and (max-width:992px){
+    .personal-information-container{
+      grid-template-columns: repeat(2, 450px);
+    }
+}
+
 
