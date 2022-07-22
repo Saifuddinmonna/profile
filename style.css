@@ -49,6 +49,8 @@ header{
   border: #fbf4d7;
   border-radius: 15px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 
 }
 .nav-container a{
@@ -443,8 +445,21 @@ footer p{
   header{
     
     flex-direction: column;}
+    
+    .nav-container{
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
     .nav-container> a{
+      display: block;
+
       
+    }
+    .header-title h1{
+      font-size: 32px;
+    }
+    .header-title h2{
+      font-size: 22px;
     }
     .personal-information-container{
       grid-template-columns: 1fr;
@@ -452,6 +467,7 @@ footer p{
  
     .social-icon-container a{
       display: inline-block;
+      
     }
   }
 
