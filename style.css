@@ -442,6 +442,8 @@ footer p{
   font-size: 25px;
   color: rgb(51, 51, 250);
   display: inline;
+  margin: 2px;
+  padding: 2px;
 }
 /* responsive start from here  */
 
@@ -455,10 +457,18 @@ footer p{
     }
     .personal-information-container{
       grid-template-columns: 1fr;
+      grid-gap: 15px;
+      text-align: justify;
     }
  
     .social-icon-container a{
       display: inline-block;
+    }
+    *{
+     text-overflow: clip;
+    }
+    .personal-information-container{
+
     }
   }
 
