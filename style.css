@@ -42,7 +42,6 @@ header{
 
 .img-div img{
   max-width: 100%;
-  min-width: 300px;
   height: 500px;
   border: 10px solid #f1c40f;
   border-radius: 50%;
