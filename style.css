@@ -30,17 +30,19 @@ header{
             color: azure;
             text-transform: capitalize;
             font-style: italic;
-            font-size: 60px;
+            font-size: 50px;
 }
 .header-title h2{
          color: azure;
             text-transform: capitalize;
             font-size: 30px;
 }
-
+/* image css here ----------------------
+------------------------ */
 
 .img-div img{
   max-width: 100%;
+  min-width: 300px;
   height: 500px;
   border: 10px solid #f1c40f;
   border-radius: 50%;
@@ -52,6 +54,7 @@ header{
   border-radius: 15px;
   text-align: center;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 
 }
@@ -98,10 +101,15 @@ a:hover {
 
 
 /* css table starts from here */
-
+.table-container{
+  background-color: #dfd7b636;
+  padding: 15px;
+  
+}
 table {
-  height: 400px;
-  width:100%;
+  width:96%;
+  height: auto;
+  
   border-collapse: collapse;
 
 }
@@ -150,7 +158,7 @@ footer {
 
 /* css for animation */
 
-img[width="auto"] {
+img[width="100%"] {
   border: 25px solid rgb(244, 206, 194);
   box-shadow: 10px 10px 20px -2px rgba(0,0,0,.5);
   transition-property: all;
@@ -164,7 +172,7 @@ img[width="auto"] {
 .skill-container {
   background-color: gray;
   min-width:100%;
-  padding: px;
+  padding: 20px;
 }
 
 .skill-container li {
@@ -321,8 +329,17 @@ img[width="auto"] {
   border-radius: 15px;
     box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.355);}
   
-
-
+/* image css here ----------------------
+------------------------ */
+ .image-container img{ width="100%";
+  border: 25px solid rgb(244, 206, 194);
+  box-shadow: 10px 10px 20px -2px rgba(0,0,0,.5);
+  transition-property: all;
+  transition: ease;
+  transition-duration: 3s;
+  border-radius: 10px;
+}
+  
 input {
   width: 400px;
   height: 50px;
