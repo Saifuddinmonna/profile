@@ -78,21 +78,26 @@ a:hover {
 .personal-information-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,380px);
+    grid-template-rows: 1fr;
     grid-gap: 15px;
-   
+   justify-content: center;
     
 }
-.personal-information-container > div{
+.personal-information-container > div {
    background-color: #3a37270e;
-   overflow: visible;
-   padding: 15px;
+   overflow: auto;
+  margin-top: 20px;
+  padding: 10px;
    
    box-shadow: 10px 10px 20px 10px rgba(128, 128, 128, 0.509);
    border-radius: 15px;
    overflow: auto;
+   height: auto;
 }
-
+.personal-information-container > div span{
+  font-weight:bolder;
+  color: rgb(68, 0, 255);
+}
 
 /* css table starts from here */
 .table-container{
@@ -320,6 +325,7 @@ footer p{
   color: rgb(255, 123, 0);
   display: inline;
   color: white;
+  margin: 0px 10px;
 }
 /* responsive start from here  */
 
@@ -346,8 +352,8 @@ footer p{
       font-size: 22px;
     }
     .personal-information-container{
-      grid-template-columns:380px;
-      grid-template-rows: 400px;
+      grid-template-columns:minmax(400px ,1fr);
+      grid-template-rows: auto;
     }
  
     .social-icon-container a{
