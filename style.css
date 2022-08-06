@@ -101,6 +101,8 @@ a:hover {
 
 /* css table starts from here */
 .table-container{
+  overflow:auto;
+  overflow-wrap: break-word;
   background-color: #dfd7b636;
   padding: 15px;
   border-radius: 15px;
@@ -143,15 +145,7 @@ tr:hover {
   background-color: rgba(255, 250, 197, 0.689);
 }
 
-footer {
-  width: 100%;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.932);
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0px 10px 25px 30px rgba(249, 194, 194, 0.284);
-  border-radius: 15px;
-}
+
 
 /* table end here  */
 
@@ -284,8 +278,8 @@ button {
   font-weight: 600;
 }
 .location{
-  margin: 10px;
-  padding: 0px;
+  margin: 0px;
+  padding: px;
 }
   .location{
 
@@ -295,14 +289,23 @@ button {
     box-shadow: 10px 10px 15px 20px rgba(0, 0, 0, 0.355);
 }
 iframe[loading="lazy"] {
-  border: 20px solid #f1c40f;
+  border: 0px solid #f1c40f;
   border-radius: 20px;
   font-weight: 700;
   font-stretch: extra-expanded;
   box-shadow:10px 10px 25px 10px; ;
 
-margin: 15px;
-padding: 15pt;
+margin: px;
+padding: pt;
+}
+footer {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.932);
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 10px 25px 30px rgba(249, 194, 194, 0.284);
+  border-radius: 15px;
 }
 footer{
    padding: 5px;
@@ -325,7 +328,8 @@ footer p{
   color: rgb(255, 123, 0);
   display: inline;
   color: white;
-  margin: 0px 10px;
+  margin: 10px 0px;
+  margin-right: 0px;
 }
 /* responsive start from here  */
 
@@ -359,6 +363,16 @@ footer p{
     .social-icon-container a{
       display: inline-block;
       
+    }
+    .table-container{
+      padding:2px;
+    }
+    thead {
+      padding-y: 10px ;
+    }
+    th, td {
+      padding-y:10px ;
+      font-size: 10px;
     }
   }
 
